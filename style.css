@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-de-fundo: #282828;
+    --cor-de-destaque: #009e00;
+    --cor-de-fundo-2: #2a421d;
+    --cor-fonte: #fff;
+
+    --fonte-principal: "Relaway", sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow:-moz-hidden-unscrollable
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+/* CABEÇALHO */
+.cabecalho_navegar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-de-fundo-2);
+    height: 80px;
+    padding: 0 60px;
+}
+
+.cabecalho_texto{
+    font-size: 16px;
+    text-align: center;
+}
+
+.cabecalho_navegar_lista{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* CONTEUDO INICIAL */
+.conteudo_inicial{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto;
+    padding: 0 60px;
+    gap: 24px;
+    max-width: 1200px;
+}
+
+.conteudo_inicial_texto{
+    align-self: center;
+    max-width: 900px;
+    text-align: left;
+}
+
+.conteudo_inicial_texto h1{
+    font-size: 52px;
+    margin: 30px 0;
+}
+
+.conteudo_inicial_texto h2{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.conteudo_inicial_lista{
+    display: flex;
+    gap: 32px;
+    padding: 0%;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+.conteudo_inicial_lista_links:hover{
+    color: var(--cor-de-destaque);
+}
+
+.div_conteudo_inicial_img{
+    align-self: center;
+}
+.conteudo_inicial_img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 50%;
+}
+
+/* CONTEUDO SOBRE MIM */
+.conteudo_sobre-mim{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-de-fundo-2);
+    padding: 60px;
+}
+
+.conteudo_sobre-mim_texto{
+    max-width: 1200px;
+}
+
+.conteudo_sobre-mim_texto h2{
+    font-size: 32px;
+}
+
+.conteudo_sobre-mim_texto p{
+    font-size: 16px;
+}

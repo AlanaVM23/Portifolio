@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --cor-de-fundo: #282828;
-    --cor-de-destaque: #009e00;
-    --cor-de-fundo-2: #2a421d;
-    --cor-fonte: #fff;
+    --cor-de-fundo: #F1F2EB;
+    --cor-de-destaque: #B7DDBB;
+    --cor-de-fundo-2: #7EB48E;
+    --cor-fonte: #FFFAFB;
+    --cor-fonte-2: #414c46;
 
     --fonte-principal: "Relaway", sans-serif;
 }
@@ -12,7 +13,6 @@
 body{
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
-    color: var(--cor-fonte);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -38,6 +38,7 @@ a{
     background-color: var(--cor-de-fundo-2);
     height: 80px;
     padding: 0 60px;
+    color: var(--cor-fonte);
 }
 
 .cabecalho_texto{
@@ -60,6 +61,7 @@ a{
     padding: 0 60px;
     gap: 24px;
     max-width: 1200px;
+    color: var(--cor-fonte-2);
 }
 
 .conteudo_inicial_texto{
@@ -86,8 +88,12 @@ a{
     font-size: 16px;
 }
 
+.conteudo_inicial_lista_links{
+    color: var(--cor-fonte-2);
+}
+
 .conteudo_inicial_lista_links:hover{
-    color: var(--cor-de-destaque);
+    color: var(--cor-de-fundo-2);
 }
 
 .div_conteudo_inicial_img{
@@ -104,7 +110,8 @@ a{
     display: flex;
     justify-content: center;
     background-color: var(--cor-de-fundo-2);
-    padding: 60px;
+    padding: 30px 60px 45px 60px;
+    color: var(--cor-fonte);
 }
 
 .conteudo_sobre-mim_texto{
@@ -117,4 +124,92 @@ a{
 
 .conteudo_sobre-mim_texto p{
     font-size: 16px;
+}
+
+/* SKILLS */
+.conteudo_skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.conteudo_skills h2{
+    font-size: 32px;
+    text-align: center;
+    color: var(--cor-fonte-2);
+}
+
+.conteudo_skills_lista{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    color: var(--cor-fonte);
+}
+
+.conteudo_skills_lista_itens{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--cor-de-destaque);
+    width: 176px;
+    height: 174px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.conteudo_skills_lista_itens img{
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo_skills_lista_itens p{
+    padding: 0 4px;
+}
+
+/* HOBBIES */
+.conteudo_hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.conteudo_hobbies h2{
+    font-size: 32px;
+    text-align: center;
+    color: var(--cor-fonte-2);
+}
+
+.conteudo_hobbies_lista{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    color: var(--cor-fonte);
+}
+
+.conteudo_hobbies_lista_itens{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--cor-de-destaque);
+    width: 176px;
+    height: 174px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.conteudo_hobbies_lista_itens img{
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo_hobbies_lista_itens p{
+    padding: 0 4px;
 }

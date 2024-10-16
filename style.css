@@ -213,3 +213,58 @@ a{
 .conteudo_hobbies_lista_itens p{
     padding: 0 4px;
 }
+
+/* FORMAÇÃO */
+.formacao{
+    justify-content: center;
+    background-color: var(--cor-de-fundo-2);
+    padding: 30px 60px 45px 60px;
+}
+
+.formacao_conteudo{
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.formacao_conteudo_titulo{
+    text-align: center;
+    font-size: 32px;
+    color: var(--cor-fonte);
+}
+
+.formacao_conteudo_caixas{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.formacao_conteudo_caixas_caixa{
+    color: var(--cor-de-fundo);
+    width: 350px;
+    gap: 16px;
+    margin: 0px;
+}
+
+.formacao_conteudo_caixa_img{
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 286px;
+    border-radius: 10px;
+}
+
+.formacao_conteudo_caixa_texto1{
+    color: var(--cor-fonte);
+    font-size: 22px;
+    margin: 10px 0px 0px 5px;
+}
+
+.formacao_conteudo_caixa_texto2{
+    color: var(--cor-fonte);
+    font-size: 16px;
+    margin: 8px 0px 0px 5px;
+}

@@ -155,8 +155,8 @@ a{
     display: flex;
     flex-direction: column-reverse;
     background-color: var(--cor-de-destaque);
-    width: 176px;
-    height: 174px;
+    width: 197px;
+    height: 197px;
     padding: 15px;
     border-radius: 10px;
 }
@@ -199,8 +199,8 @@ a{
     display: flex;
     flex-direction: column-reverse;
     background-color: var(--cor-de-destaque);
-    width: 176px;
-    height: 174px;
+    width: 197px;
+    height: 197px;
     padding: 15px;
     border-radius: 10px;
 }
@@ -235,26 +235,30 @@ a{
 
 .formacao_conteudo_caixas{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 16px;
     flex-wrap: wrap;
 }
 
 .formacao_conteudo_caixas_caixa{
     color: var(--cor-de-fundo);
-    width: 350px;
+    width: 388px;
     gap: 16px;
     margin: 0px;
 }
 
-.formacao_conteudo_caixa_img{
+.formacao_conteudo_caixa_campo{
     background-color: var(--cor-de-fundo);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 388px;
     height: 286px;
     border-radius: 10px;
+}
+
+.formacao_conteudo_caixa_campo_img{
+    width: 200px;
 }
 
 .formacao_conteudo_caixa_texto1{
@@ -267,4 +271,59 @@ a{
     color: var(--cor-fonte);
     font-size: 16px;
     margin: 8px 0px 0px 5px;
+}
+
+/* PROJETOS */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 60px 30px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.projetos_titulo{
+    text-align: center;
+    font-size: 32px;
+    color: var(--cor-fonte-2);
+}
+
+.projetos_conteudo_campo{
+    display: flex;
+    margin: 10px 0 40px 0;
+    gap: 30px;
+}
+
+.projetos_conteudo_img{
+    width: 770px;
+    height: 420px;
+    box-shadow: 4px 4px 4px #ababab;
+    border-radius: 10px;
+}
+
+.projetos_conteudo_texto{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.projetos_conteudo_texto1{
+    font-size: 22px;
+    color: var(--cor-fonte-2);
+    margin: 5px 0;
+}
+
+.projetos_conteudo_texto2{
+    font-size: 16px;
+    color: var(--cor-fonte-2);
+    margin: 5px 0;
+}
+
+.projetos_conteudo_btn{
+    background: transparent;
+    border: 2px solid var(--cor-de-fundo-2);
+    color: var(--cor-de-fundo-2);
+    width: 116px;
+    height: 51px;
+    margin: 5px 0;
 }

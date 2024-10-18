@@ -7,12 +7,12 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <nav class="cabecalho_navegar">
             <h1 class="cabecalho_texto">Alana Ventura Maróstica</h1>
             <ul class="cabecalho_navegar_lista">
                 <li class="cabecalho_lista_links"><a href="" >Sobre mim</a></li>
-                <li class="cabecalho_lista_links"><a href="" >skills</a></li>
+                <li class="cabecalho_lista_links"><a href="" >Skills</a></li>
                 <li class="cabecalho_lista_links"><a href="" >Hobbies</a></li>
                 <li class="cabecalho_lista_links"><a href="" >Formação</a></li>
                 <li class="cabecalho_lista_links"><a href="" >Projetos</a></li>
@@ -146,6 +146,46 @@
                 </div>
             </section>
         </section>
+        <section class="contato">
+            <section class="contato_conteudo">
+                <div>
+                    <img class="contato_conteudo_img" src="img/contato.JPG" alt="imagem segurando um celular">
+                </div>
+                <div class="contato_conteudo_texto">
+                    <h1 class="contato_conteudo_texto_titulo">Contato</h1>
+                    <p class="contato_conteudo_texto_texto">
+                        Quer entrar em contato comigo?
+                        <br>
+                        Preencha o formulário ao lado e entrarei em contato o mais rápido possível.
+                    </p>
+                    <div class="contato_conteudo_campos">
+                        <div class="contato_conteudo_campos_campo">
+                            <label class="contato_conteudo_campos_campo_label" for="nome">Nome</label>
+                            <input class="contato_conteudo_campos_campo_input" type="text">
+                        </div>
+                        <div class="contato_conteudo_campos_campo">
+                            <label class="contato_conteudo_campos_campo_label" for="email">E-mail</label>
+                            <input class="contato_conteudo_campos_campo_input" type="email">
+                        </div>
+                        <div class="contato_conteudo_campos_campo">
+                            <label class="contato_conteudo_campos_campo_label" for="assunto">Assunto</label>
+                            <input class="contato_conteudo_campos_campo_input" type="text">
+                        </div>
+                        <div class="contato_conteudo_campos_campo_mensagem">
+                            <label class="contato_conteudo_campos_campo_label" for="mensagem">Mensagem</label>
+                            <textarea class="contato_conteudo_campos_campo_mensagem_textarea" name="mensagem" id=""></textarea>
+                        </div>
+                        <button class="contato_conteudo_campos_btn">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
+    <footer class="final">
+        <div class="final_conteudo">
+            <p class="final_conteudo_texto">Desevolvido por Alana Ventura Maróstica</p>
+            <p class="final_conteudo_texto">2024</p>
+        </div>
+    </footer>
 </body>
 </html>

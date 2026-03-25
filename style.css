@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --cor-de-fundo: #F1F2EB;
-    --cor-de-destaque: #B7DDBB;
-    --cor-de-fundo-2: #7EB48E;
-    --cor-hover: #9cc8a0;
-    --cor_hover_input: #45a14e;
+    --cor-de-fundo: #ebf0f2;
+    --cor-de-destaque: #bad6e0;
+    --cor-de-fundo-2: #92afba;
+    --cor-hover: #9cbec8;
+    --cor_hover_input: #6a97a7;
     --cor-fonte: #FFFAFB;
     --cor-fonte-2: #414c46;
     --fonte-principal: "Relaway", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,6 +20,7 @@ body{
     font-family: var(--fonte-principal);
     margin: 0;
     padding: 0;
+    padding-top: 80px;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -31,12 +36,21 @@ a{
     color: var(--cor-fonte);
 }
 
+section{
+    scroll-margin-top: 100px;
+}
+
 /* CABEÇALHO */
 .cabecalho{
     background-color: var(--cor-de-fundo-2);
     height: 80px;
-    padding: 0px 60px;
+    padding: 0px;
     color: var(--cor-fonte);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .cabecalho_navegar{
@@ -64,9 +78,9 @@ a{
 .conteudo_inicial{
     display: flex;
     justify-content: space-around;
-    margin: 60px auto;
+    margin: 40px auto;
     padding: 0 60px;
-    gap: 24px;
+    gap: 40px;
     max-width: 1200px;
     color: var(--cor-fonte-2);
 }
@@ -87,9 +101,15 @@ a{
     font-weight: lighter;
 }
 
+.conteudo_inicial_texto h3{
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
 .conteudo_inicial_lista{
     display: flex;
-    gap: 32px;
+    gap: 42px;
     padding: 0%;
     margin: 30px 0;
     font-size: 16px;
@@ -104,10 +124,12 @@ a{
 }
 
 .div_conteudo_inicial_img{
-    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .conteudo_inicial_img{
-    width: 100%;
+    width: 70%;
     max-width: 600px;
     border-radius: 50%;
 }
@@ -123,6 +145,7 @@ a{
 
 .conteudo_sobre-mim_texto{
     max-width: 1200px;
+    text-align: justify;
 }
 
 .conteudo_sobre-mim_texto h2{
@@ -130,7 +153,8 @@ a{
 }
 
 .conteudo_sobre-mim_texto p{
-    font-size: 16px;
+    font-size: 20px;
+    text-indent: 40px;
 }
 
 /* SKILLS */

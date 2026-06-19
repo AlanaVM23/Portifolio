@@ -21,8 +21,6 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 80px;
-    width: 100%;
-    height: 100vh;
     box-sizing: border-box;
     overflow:-moz-hidden-unscrollable
 }
@@ -210,7 +208,7 @@ section{
   min-width: 300px;      
   height: 400px;         
   perspective: 1000px;   
-  background-color: transparent !important; 
+  background-color: transparent ; 
 }
 
 .flip-card-inner {
@@ -369,107 +367,87 @@ section{
 }
 
 
-/* HOBBIES */
-.conteudo_hobbies{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px 60px;
-    max-width: 1200px;
-    margin: auto;
+.conteudo_certificados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 60px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.conteudo_hobbies h2{
-    font-size: 32px;
-    text-align: center;
-    color: var(--cor-fonte-2);
+.conteudo_certificados h2 {
+  font-size: 32px;
+  text-align: center;
+  color: var(--cor-fonte-2);
+  margin-bottom: 24px;
 }
 
-.conteudo_hobbies_lista{
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    padding: 0;
-    flex-wrap: wrap;
-    color: var(--cor-fonte);
+.card_bacharelado_longo {
+  height: 150px;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  background-color: var(--cor-de-destaque);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+  color: var(--cor-fonte);
 }
 
-.conteudo_hobbies_lista_itens{
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: var(--cor-de-destaque);
-    width: 197px;
-    height: 197px;
-    padding: 15px;
-    border-radius: 10px;
+.card_bacharelado_longo strong {
+  font-size: 18px;
 }
 
-.conteudo_hobbies_lista_itens img{
-    width: 40px;
-    height: 40px;
+.card_bacharelado_longo span {
+  font-size: 17px;
 }
 
-.conteudo_hobbies_lista_itens p{
-    padding: 0 4px;
+.conteudo_certificados_lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  color: var(--cor-fonte);
+  width: 100%;
+  list-style: none;
 }
 
-/* FORMAÇÃO */
-.formacao{
-    justify-content: center;
-    background-color: var(--cor-de-fundo-2);
-    padding: 30px 60px 45px 60px;
+.conteudo_certificados_lista strong {
+  font-size: 18px;
 }
 
-.formacao_conteudo{
-    justify-content: center;
-    max-width: 1200px;
-    margin: auto;
+.conteudo_certificados_lista span {
+  font-size: 17px;
 }
 
-.formacao_conteudo_titulo{
-    text-align: center;
-    font-size: 32px;
-    color: var(--cor-fonte);
+.conteudo_certificados_lista_itens.conteudo_experiencia_texto_lista_card {
+  height: 150px;
+  width: 100%;
 }
 
-.formacao_conteudo_caixas{
-    display: flex;
-    justify-content:center;
-    gap: 16px;
-    flex-wrap: wrap;
+.conteudo_certificados_lista_itens .flip-card-front,
+.conteudo_certificados_lista_itens .flip-card-back {
+  background-color: var(--cor-de-destaque);
+  padding: 16px 20px;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.formacao_conteudo_caixas_caixa{
-    color: var(--cor-de-fundo);
-    width: 388px;
-    gap: 16px;
-    margin: 0px;
+.conteudo_certificados_lista_itens .flip-card-back {
+  overflow: hidden;
 }
 
-.formacao_conteudo_caixa_campo{
-    background-color: var(--cor-de-fundo);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 388px;
-    height: 286px;
-    border-radius: 10px;
-}
-
-.formacao_conteudo_caixa_campo_img{
-    width: 200px;
-}
-
-.formacao_conteudo_caixa_texto1{
-    color: var(--cor-fonte);
-    font-size: 22px;
-    margin: 10px 0px 0px 5px;
-}
-
-.formacao_conteudo_caixa_texto2{
-    color: var(--cor-fonte);
-    font-size: 16px;
-    margin: 8px 0px 0px 5px;
+.conteudo_certificados_lista_itens .flip-card-front p.conteudo_certificados_lista_itens_texto,
+.conteudo_certificados_lista_itens .flip-card-back p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 100%;
 }
 
 /* PROJETOS */

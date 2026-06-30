@@ -450,6 +450,21 @@ section{
   width: 100%;
 }
 
+/*EXPERIENCIA PROFISSIONAL*/
+.experiencia{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-de-fundo-2);
+    padding: 30px 60px 45px 60px;
+    color: var(--cor-fonte);
+}
+
+.experiencia_titulo{
+    max-width: 1200px;
+    text-align: justify;
+}
+
+
 /* PROJETOS */
 .projetos{
     display: flex;

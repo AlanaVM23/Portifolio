@@ -72,6 +72,35 @@ section{
     flex-wrap: wrap;
 }
 
+.cabecalho_navegar_lista a{
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-fonte);
+    padding-bottom: 8px;
+    transition: color .3s ease;
+}
+
+.cabecalho_navegar_lista a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-fonte);
+    transition: width .3s ease;
+}
+
+.cabecalho_navegar_lista a:hover::after,
+.cabecalho_navegar_lista a:focus::after{
+    width: 100%;
+}
+
+.cabecalho_navegar_lista a:hover{
+    opacity: .9;
+}
+
 /* CONTEUDO INICIAL */
 .conteudo_inicial{
     display: flex;
